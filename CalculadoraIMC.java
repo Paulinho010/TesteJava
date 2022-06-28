@@ -68,7 +68,7 @@ public class CalculadoraIMC {
             if (imc < 35 && imc > 39.9){
                 retorno = "Obesidade grau 1";
             }
-            if (imc < 40 ){
+            if (imc > 40 ){
                 retorno = "Obesidade grau 3 (Obesidade Mórbida)";
             }
         }
@@ -93,7 +93,7 @@ public class CalculadoraIMC {
                 if (imc < 37.1 && imc > 41.9){
                     retorno = "Obesidade grau 2";
                 }
-                if (imc < 42 ){
+                if (imc > 42 ){
                     retorno = "Obesidade grau 3 (Obesidade Mórbida)";
                 }
             }
@@ -115,7 +115,7 @@ public class CalculadoraIMC {
                 if (imc < 35.1 && imc > 39.9){
                     retorno = "Obesidade grau 2";
                 }
-                if (imc < 40 ){
+                if (imc > 40 ){
                     retorno = "Obesidade grau 3 (Obesidade Mórbida)";
                 }
             }
