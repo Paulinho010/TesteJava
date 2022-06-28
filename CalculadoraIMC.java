@@ -18,10 +18,10 @@ public class CalculadoraIMC {
                 if (imc < 5.0) {
                     retorno = "Baixo peso";
                 }
-                else if (imc < 5.1 && imc > 85.0){
+                else if (imc > 5.1 && imc < 85.0){
                     retorno = "Peso normal";
                 }
-                else if (imc < 85.1 && imc > 95.0){
+                else if (imc > 85.1 && imc < 95.0){
                     retorno = "Sobrepeso";
                 }
                 else if (imc > 95.0){
@@ -34,10 +34,10 @@ public class CalculadoraIMC {
                 if (imc < 5.0) {
                     retorno = "Baixo peso";
                 }
-                else if (imc < 5.1 && imc > 85.0){
+                else if (imc > 5.1 && imc < 85.0){
                     retorno = "Peso normal";
                 }
-                else if (imc < 85.1 && imc > 95.0){
+                else if (imc > 85.1 && imc < 95.0){
                     retorno = "Peso normal";
                 }
                 else if (imc > 95.0){
@@ -50,22 +50,22 @@ public class CalculadoraIMC {
             if (imc < 15.9){
                 retorno = "Baixo peso muito grave";
             }
-            if (imc < 16.00 && imc > 16.9){
+            if (imc > 16.00 && imc < 16.9){
                 retorno = "Baixo peso grave";
             }
-            if (imc < 17.00 && imc > 18.4){
+            if (imc > 17.00 && imc < 18.4){
                 retorno = "Baixo peso";
             }
-            if (imc < 18.50 && imc > 24.9){
+            if (imc > 18.50 && imc < 24.9){
                 retorno = "Peso normal";
             }
-            if (imc < 25 && imc > 29.9){
+            if (imc > 25 && imc < 29.9){
                 retorno = "Sobrepeso";
             }
-            if (imc < 30 && imc > 34.9){
+            if (imc > 30 && imc < 34.9){
                 retorno = "Obesidade grau 1";
             }
-            if (imc < 35 && imc > 39.9){
+            if (imc > 35 && imc < 39.9){
                 retorno = "Obesidade grau 1";
             }
             if (imc > 40 ){
@@ -81,16 +81,16 @@ public class CalculadoraIMC {
                 if (imc < 21.9) {
                     retorno = "Baixo peso";
                 }
-                else if (imc < 22 && imc > 27 ){
+                else if (imc > 22 && imc < 27 ){
                     retorno = "Peso normal";
                 }
-                else if (imc < 27.1 && imc > 32 ){
+                else if (imc > 27.1 && imc < 32 ){
                     retorno = "Sobrepeso";
                 }
-                if (imc < 32.1 && imc > 37 ){
+                if (imc > 32.1 && imc < 37 ){
                 retorno = "Obesidade grau 1";
                 }
-                if (imc < 37.1 && imc > 41.9){
+                if (imc > 37.1 && imc < 41.9){
                     retorno = "Obesidade grau 2";
                 }
                 if (imc > 42 ){
@@ -103,16 +103,16 @@ public class CalculadoraIMC {
                 if (imc < 21.9) {
                     retorno = "Baixo peso";
                 }
-                else if (imc < 22 && imc > 27 ){
+                else if (imc > 22 && imc < 27 ){
                     retorno = "Peso normal";
                 }
-                else if (imc < 27.1 && imc > 30 ){
+                else if (imc > 27.1 && imc < 30 ){
                     retorno = "Sobrepeso";
                 }
-                if (imc < 30.1 && imc > 35 ){
+                if (imc > 30.1 && imc < 35 ){
                 retorno = "Obesidade grau 1";
                 }
-                if (imc < 35.1 && imc > 39.9){
+                if (imc > 35.1 && imc < 39.9){
                     retorno = "Obesidade grau 2";
                 }
                 if (imc > 40 ){
