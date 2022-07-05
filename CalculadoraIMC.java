@@ -45,7 +45,7 @@ public class CalculadoraIMC {
                 }
         }
         //Caso seja adulto
-        else if (idade > 20 || idade <= 65)
+        else if (idade > 20 && idade <= 65)
         {
             if (imc < 15.9){
                 retorno = "Baixo peso muito grave";
