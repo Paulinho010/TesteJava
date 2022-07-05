@@ -10,13 +10,13 @@ public class AppTest {
 @Test
 public void testeBaixoPesoMuitoGraveAdulto20() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1,7556, 20, "masculino"))
+assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.7556, 20, "masculino"))
 }
 
 @Test
 public void testeBaixoPesoMuitoGraveAdulto65() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1,7556, 20, "masculino"))
+assertEquals("Baixo peso muito grave", calc.calcularImc(49.0, 1.7556, 20, "masculino"))
 }
 
 
@@ -58,13 +58,13 @@ assertEquals("Baixo peso grave", calc.calcularImc(55.0, 1.799, 65, "masculino"))
 @Test
 public void testeBaixoPesoAdulto20LimiteMinimo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso", calc.calcularImc(53.0, 1,761, 20, "masculino"))
+assertEquals("Baixo peso", calc.calcularImc(53.0, 1.761, 20, "masculino"))
 }
 
 @Test
 public void testeBaixoPesoAdulto65LimiteMinimo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso", calc.calcularImc(53.0, 1,761, 65, "masculino"))
+assertEquals("Baixo peso", calc.calcularImc(53.0, 1.761, 65, "masculino"))
 }
 @Test
 public void testeBaixoPesoAdulto20LimiteMaximo() {
@@ -144,25 +144,25 @@ assertEquals("Peso normal", calc.calcularImc(92.0, 1.753, 65, "masculino"))
 @Test
 public void testeObesidadeGrau1Adulto20LimiteMinimo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade grau 1", calc.calcularImc(86.0, 1,691, 20, "masculino"))
+assertEquals("Obesidade grau 1", calc.calcularImc(86.0, 1.691, 20, "masculino"))
 }
 
 @Test
 public void testeObesidadeGrau1Adulto65LimiteMinimo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade grau 1", calc.calcularImc(86, 1,691, 65, "masculino"))
+assertEquals("Obesidade grau 1", calc.calcularImc(86, 1.691, 65, "masculino"))
 }
 
 @Test
 public void testeObesidadeGrau1Adulto65LimiteMaximo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade grau 1", calc.calcularImc(100.0, 1,691, 65, "masculino"))
+assertEquals("Obesidade grau 1", calc.calcularImc(100.0, 1.691, 65, "masculino"))
 }
 
 @Test
 public void testeObesidadeGrau1Adulto20LimiteMaximo() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade grau 1", calc.calcularImc(100.0, 1,691, 20, "masculino"))
+assertEquals("Obesidade grau 1", calc.calcularImc(100.0, 1.691, 20, "masculino"))
 }
 
 
@@ -218,7 +218,7 @@ assertEquals("Obesidade grau 3 (Obesidade Mórbida)", calc.calcularImc(97.0, 1.5
 @Test
 public void testeBaixoPesoIdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso Idosas", calc.calcularImc(55.0, 1,70, 66, "feminino"))
+assertEquals("Baixo peso Idosas", calc.calcularImc(55.0, 1.70, 66, "feminino"))
 }
 
 
@@ -228,13 +228,13 @@ assertEquals("Baixo peso Idosas", calc.calcularImc(55.0, 1,70, 66, "feminino"))
 @Test
 public void testePesoNormalIdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Peso normal Idosas", calc.calcularImc(65.0, 1,719, 66, "feminino"))
+assertEquals("Peso normal Idosas", calc.calcularImc(65.0, 1.719, 66, "feminino"))
 }
 
 @Test
 public void testePesoNormalIdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Peso normal Idosas", calc.calcularImc(80.0, 1,721, 66, "feminino"))
+assertEquals("Peso normal Idosas", calc.calcularImc(80.0, 1.721, 66, "feminino"))
 }
 
 //IDOSOS MULHERES
@@ -243,13 +243,13 @@ assertEquals("Peso normal Idosas", calc.calcularImc(80.0, 1,721, 66, "feminino")
 @Test
 public void testeSobrepesoIdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Sobrepeso Idosas", calc.calcularImc(80.0, 1,718, 66, "feminino"))
+assertEquals("Sobrepeso Idosas", calc.calcularImc(80.0, 1.718, 66, "feminino"))
 }
 
 @Test
 public void testeSobrepesoIdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Sobrepeso Idosas", calc.calcularImc(95.0, 1,723, 66, "feminino"))
+assertEquals("Sobrepeso Idosas", calc.calcularImc(95.0, 1.723, 66, "feminino"))
 }
 
 //IDOSOS MULHERES
@@ -259,13 +259,13 @@ assertEquals("Sobrepeso Idosas", calc.calcularImc(95.0, 1,723, 66, "feminino"))
 @Test
 public void testeObesidadeGrau1IdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 1 Idosas", calc.calcularImc(95.0, 1,72, 66, "feminino"))
+assertEquals("Obesidade Grau 1 Idosas", calc.calcularImc(95.0, 1.72, 66, "feminino"))
 }
 
 @Test
 public void testeObesidadeGrau1IdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 1 Idosas", calc.calcularImc(100.0, 1,644, 66, "feminino"))
+assertEquals("Obesidade Grau 1 Idosas", calc.calcularImc(100.0, 1.644, 66, "feminino"))
 }
 
 //IDOSOS MULHERES
@@ -275,13 +275,13 @@ assertEquals("Obesidade Grau 1 Idosas", calc.calcularImc(100.0, 1,644, 66, "femi
 @Test
 public void testeObesidadeGrau2IdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 2 Idosas", calc.calcularImc(100.0, 1,641, 66, "feminino"))
+assertEquals("Obesidade Grau 2 Idosas", calc.calcularImc(100.0, 1.641, 66, "feminino"))
 }
 
 @Test
 public void testeObesidadeGrau2IdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 2 Idosas", calc.calcularImc(113.0, 1,642, 66, "feminino"))
+assertEquals("Obesidade Grau 2 Idosas", calc.calcularImc(113.0, 1.642, 66, "feminino"))
 }
 
 //IDOSOS MULHERES
@@ -292,7 +292,7 @@ assertEquals("Obesidade Grau 2 Idosas", calc.calcularImc(113.0, 1,642, 66, "femi
 @Test
 public void testeObesidadeGrau3IdososMulheres() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 3 Idosas (Obesidade Mórbida)", calc.calcularImc(113.0, 1,64, 66, "masculino"))
+assertEquals("Obesidade Grau 3 Idosas (Obesidade Mórbida)", calc.calcularImc(113.0, 1.64, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -301,7 +301,7 @@ assertEquals("Obesidade Grau 3 Idosas (Obesidade Mórbida)", calc.calcularImc(11
 @Test
 public void testeBaixoPesoIdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Baixo peso Idosos (Obesidade Mórbida)", calc.calcularImc(57.0, 1,649, 66, "masculino"))
+assertEquals("Baixo peso Idosos (Obesidade Mórbida)", calc.calcularImc(57.0, 1.649, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -310,13 +310,13 @@ assertEquals("Baixo peso Idosos (Obesidade Mórbida)", calc.calcularImc(57.0, 1,
 @Test
 public void testePesoNormalIdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Peso normal Idosos", calc.calcularImc(60.0, 1,651, 66, "masculino"))
+assertEquals("Peso normal Idosos", calc.calcularImc(60.0, 1.651, 66, "masculino"))
 }
 
 @Test
 public void testePesoNormalIdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Peso normal Idosos", calc.calcularImc(83.0, 1,753, 66, "masculino"))
+assertEquals("Peso normal Idosos", calc.calcularImc(83.0, 1.753, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -325,13 +325,13 @@ assertEquals("Peso normal Idosos", calc.calcularImc(83.0, 1,753, 66, "masculino"
 @Test
 public void testeSobrePesoIdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Sobrepeso Idosos", calc.calcularImc(83.0, 1,75, 66, "masculino"))
+assertEquals("Sobrepeso Idosos", calc.calcularImc(83.0, 1.75, 66, "masculino"))
 }
 
 @Test
 public void testeSobrePesoIdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Sobrepeso Idosos", calc.calcularImc(93.0, 1,7511, 66, "masculino"))
+assertEquals("Sobrepeso Idosos", calc.calcularImc(93.0, 1.7511, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -340,13 +340,13 @@ assertEquals("Sobrepeso Idosos", calc.calcularImc(93.0, 1,7511, 66, "masculino")
 @Test
 public void testeObesidadeGrau1IdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 1 Idosos", calc.calcularImc(95.0, 1,75, 66, "masculino"))
+assertEquals("Obesidade Grau 1 Idosos", calc.calcularImc(95.0, 1.75, 66, "masculino"))
 }
 
 @Test
 public void testeObesidadeGrau1IdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 1 Idosos", calc.calcularImc(95.0, 1,6472, 66, "masculino"))
+assertEquals("Obesidade Grau 1 Idosos", calc.calcularImc(95.0, 1.6472, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -355,13 +355,13 @@ assertEquals("Obesidade Grau 1 Idosos", calc.calcularImc(95.0, 1,6472, 66, "masc
 @Test
 public void testeObesidadeGrau2IdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 2 Idosos", calc.calcularImc(95.0, 1,6451, 66, "masculino"))
+assertEquals("Obesidade Grau 2 Idosos", calc.calcularImc(95.0, 1.6451, 66, "masculino"))
 }
 
 @Test
 public void testeObesidadeGrau2IdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 2 Idosos", calc.calcularImc(90.0, 1,50, 66, "masculino"))
+assertEquals("Obesidade Grau 2 Idosos", calc.calcularImc(90.0, 1.50, 66, "masculino"))
 }
 
 //IDOSOS HOMENS
@@ -370,7 +370,7 @@ assertEquals("Obesidade Grau 2 Idosos", calc.calcularImc(90.0, 1,50, 66, "mascul
 @Test
 public void testeObesidadeGrau3IdososHomens() {
 CalculadoraIMC calc = new calculadoraIMC();
-assertEquals("Obesidade Grau 3 Idosos (Obesidade Mórbida)", calc.calcularImc(93.0, 1,50, 66, "masculino"))
+assertEquals("Obesidade Grau 3 Idosos (Obesidade Mórbida)", calc.calcularImc(93.0, 1.50, 66, "masculino"))
 }
 
 //MENINOS
