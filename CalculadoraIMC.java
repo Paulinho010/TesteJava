@@ -4,7 +4,7 @@ public class CalculadoraIMC {
 
     private double imc;
 
-    public String calcularImc double peso, double altura, int idade, String sexo) {
+    public String calcularImc (double peso, double altura, int idade, String sexo) {
 
         String retorno "";
         imc = peso / (altura*altura);
@@ -13,7 +13,7 @@ public class CalculadoraIMC {
         if (idade <= 20)
         {
             retorno = "";
-            if (sexo.toUppercase()=="m")
+            if (sexo.equals("masculino"))
             {
                 if (imc < 5.0) {
                     retorno = "Baixo peso";
@@ -29,7 +29,7 @@ public class CalculadoraIMC {
                 }
 
             }
-            if (sexo.toUppercase()=="f")
+            if (sexo.equals("feminino"))
             {
                 if (imc < 5.0) {
                     retorno = "Baixo peso";
@@ -76,7 +76,7 @@ public class CalculadoraIMC {
         //Caso seja idoso
         if (idade > 65)
         {
-            if (sexo.toUppercase()=="m")
+            if (sexo.equals("masculino"))
             {
                 if (imc < 21.9) {
                     retorno = "Baixo peso";
@@ -98,7 +98,7 @@ public class CalculadoraIMC {
                 }
             }
 
-            if (sexo.toUppercase()=="f")
+            if (sexo.equals("feminino"))
             {
                 if (imc < 21.9) {
                     retorno = "Baixo peso";
